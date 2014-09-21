@@ -86,10 +86,9 @@ p {
 
 /* header */
 .header {
-  background-color: #2B344D;
   
   a {
-    color: #F8F7EE;
+    color: #2B344D;
     &:hover {
       text-decoration:none;
       color: #2B344D;
@@ -111,31 +110,5 @@ p {
   line-height: 1;
   &:hover {
     text-decoration: none;
-  }
-}
-
-/* footer */
-
-footer {
-  margin-top: 60px;
-  padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
-  color: $gray-light;
-  a {
-    color: $gray;
-    &:hover {
-      color: $gray-darker;
-    }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 10px;
-    }
   }
 }

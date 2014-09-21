@@ -1,0 +1,9 @@
+<h1> Song Results </h1>
+
+<ul class="list-group list results">
+  <% @embed_info.each do |e| %>
+
+    <li class="list-group-item"> <%= e.html_safe %>      <%= submit_tag("Add to mixtape", class: 'btn btn-default') %></li>
+
+  <%end%>
+</ul>

@@ -1,0 +1,6 @@
+<%= form_for @playlist, url: {action: "create"}, html: {class: "form-group"} do |f| %>
+  <div class="form-group">
+    <%= f.label :name, 'Mixtape name' %>
+    <%= f.text_field :name, class: "playlist-input" %></div>
+  <%= f.submit "Create new mixtape", class: "btn btn-large btn-primary" %>
+<% end %>

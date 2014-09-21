@@ -4,9 +4,8 @@
       <%= link_to "Mixtape", root_path , id: "logo" %>
       <nav>
         <ul class="nav navbar-nav navbar-right nav-links">
-          <li><%= link_to "Create Playlist",  '#' %></li>
-          <li><%= link_to "Jukebox",    '#' %></li>
-          <li><%= link_to "Sign in", '#' %></li>
+          <li><%= link_to "Create Mixtape",  new_playlist_path %></li>
+          <li><%= link_to "Jukebox",    playlist_index_path %></li>
         </ul>
       </nav>
     </div>

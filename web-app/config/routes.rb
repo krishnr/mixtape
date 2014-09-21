@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
 
-  resources :playlist
+root 'playlist#home'
 
-  root 'playlist#home'
+resources :playlist
+
+get "search", :to => 'song#search'
+
+post "results", :to => 'song#results'
+
+match 'add', to: 'users#call_app_controller'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

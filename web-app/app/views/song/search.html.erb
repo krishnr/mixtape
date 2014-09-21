@@ -1,0 +1,6 @@
+<%= form_tag({action: "results"}, method: "post", class: "search_form form-group") do %>
+  <div class = "form-group">
+  <%= text_field_tag(:q, nil, placeholder: 'Type in a song', class: 'form-control search-input', autocomplete: "off") %>
+  </div>
+  <%= submit_tag("Search", class: 'btn btn-large btn-primary submit') %>
+<% end %>

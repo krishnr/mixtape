@@ -1,0 +1,62 @@
+// Place all the styles related to the song controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.results {
+  margin-top: 30px;
+  a {
+    color: #55BBB2;
+  }&:hover {
+    text-decoration: none;
+  }
+  li {
+    height: 150px;
+    width: 560px;
+    vertical-align: center;
+    .btn {
+      position: relative;
+      margin-top: -110px;
+    }
+    iframe {
+      height: 130px;
+      width: 400px;
+    }
+  }
+}
+
+.search-input {
+      ::-webkit-input-placeholder { /* WebKit browsers */
+        color:    #eee;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    #eee;
+       opacity:  1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    #eee;
+       opacity:  1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+       color:    #eee;
+    }
+}
+
+.form-group {
+  vertical-align: middle;
+  text-align: center;
+
+  .form-control {
+    font-size: 55px;
+    height: 80px;
+    border: none;
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  .submit {
+    font-size: 30px;
+    height: 60px;
+    width: 125px;
+    border-radius: 25px;
+  }
+}
