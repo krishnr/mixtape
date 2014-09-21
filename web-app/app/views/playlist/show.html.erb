@@ -1,5 +1,5 @@
 <%= link_to "Back to Jukebox", playlist_index_path, class: "btn btn-default"  %>
-<%= link_to "Add songs", "/search", class: "btn btn-large btn-primary" %>
+<%= link_to "Add songs", {:playlist_id => @playlist.id, :action => "search", :controller => "song"}, {:class => "btn btn-large btn-primary"} %>
 <h1> <%=@playlist.name %> </h1>
 <br>
 <br>
@@ -9,7 +9,7 @@
     <% @songs.each do |song| %>
 
       <li class = "list-group-item">
-        <%= song.html_safe %>
+        <%= song.embed_code.html_safe %>
       </li>
 
     <%end%>

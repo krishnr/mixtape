@@ -24,6 +24,21 @@
   }
 }
 
+.list-group {
+  li {
+    height: 150px;
+    vertical-align: center;
+    .btn {
+      position: relative;
+      margin-top: -110px;
+    }
+    iframe {
+      height: 130px;
+      width: 400px;
+    }
+  }
+}
+
 .search-input {
       ::-webkit-input-placeholder { /* WebKit browsers */
         color:    #eee;

@@ -12,7 +12,7 @@ class SongController < ApplicationController
 
     client = Soundcloud.new(:client_id => '9945169c68a743c3dc4e74ee562d5be8')
 
-    @tracks = client.get('/tracks', :q => @query.to_s, :limit => 1)
+    @tracks = client.get('/tracks', :q => @query.to_s, :limit => 8)
 
     @embed_info = []
 
@@ -25,6 +25,8 @@ class SongController < ApplicationController
   end
 
   def add
+    song = Song.create(:playlist_id => params[:playlist_id], :embed_code => params[:embed_code])
 
+    redirect_to playlist_path(id: params[:playlist_id])
   end
 end
