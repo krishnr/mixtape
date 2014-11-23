@@ -1,6 +1,7 @@
+<h1> What song would you like to add? </h2>
 <%= form_tag({action: "results", playlist_id: params[:playlist_id]}, method: "post", class: "search_form form-group") do %>
   <div class = "form-group">
-  <%= text_field_tag(:q, nil, placeholder: 'Type in a song', class: 'form-control search-input', autocomplete: "off") %>
+  <%= text_field_tag(:q, nil, placeholder: 'eg. Ongoing Thing - 20syl', class: 'form-control search-input', autocomplete: "off") %>
   </div>
   <%= submit_tag("Search", class: 'btn btn-large btn-primary submit') %>
 <% end %>

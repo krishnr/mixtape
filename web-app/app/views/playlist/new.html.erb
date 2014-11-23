@@ -1,6 +1,8 @@
+<h1> What do you wanna call your mixtape? </h1>
+
 <%= form_for @playlist, url: {action: "create"}, html: {class: "form-group"} do |f| %>
   <div class="form-group">
-    <%= f.label :name, 'Mixtape name' %>
-    <%= f.text_field :name, class: "playlist-input" %></div>
-  <%= f.submit "Create new mixtape", class: "btn btn-large btn-primary" %>
+    <%= f.text_field(:name, :placeholder => 'eg. Awesome Mixtape Vol. 1', class: "form-control search-input", autocomplete: "off") %>
+  </div>
+  <%= f.submit "Create", class: 'btn btn-large btn-primary submit' %>
 <% end %>
